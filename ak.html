@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AK Milk Factory</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fff5e6, #ffe6f0);
+      color: #333;
+      animation: fadeIn 2s ease;
+    }
+
+    header {
+      background: #00bfff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: slideInDown 1s ease-out;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      color: #ff3399;
+      animation: fadeIn 3s ease;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px;
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+      animation: floatIn 1.5s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00cc99;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #009966;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #ff9999;
+      color: white;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes floatIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to AK Milk Factory</h1>
+    <p>Fresh & Pure Milk Delivered Daily</p>
+  </header>
+
+  <h2>Our Products</h2>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585238341988-73b24538c33a" alt="Fresh Milk">
+      <h3>Fresh Cow Milk</h3>
+      <p>100% pure, fresh and healthy.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601315576601-972c9d61e2b0" alt="Paneer">
+      <h3>Homemade Paneer</h3>
+      <p>Soft, delicious, and nutritious paneer.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1623446047355-9110b152ed53" alt="Curd">
+      <h3>Natural Curd</h3>
+      <p>Perfect texture, no preservatives.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 AK Milk Factory | Quality You Can Trust!
+  </footer>
+
+</body>
+</html>
